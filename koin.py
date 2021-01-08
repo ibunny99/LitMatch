@@ -27,11 +27,11 @@ def main():
      for i in range(jml):
           print()
           data = {"activity":"watch_video"}
-          r = requests.post("http://www.litatom.com/api/sns/v1/lit/account/deposit_by_activity?sid="+ses+"&loc=ID&uuid="+uuid+"&version=3.8.1&lang=in&platform=android", headers=headers, data=json.dumps(data)).text
+          r = requests.post("http://www.litatom.com/api/sns/v1/lit/account/deposit_by_activity?sid="+ses+"&loc=ID&uuid="+uuid+"&version=3.8.2&lang=vi&platform=android", headers=headers, data=json.dumps(data)).text
           cek = json.loads(r)
           if cek['success'] ==True:
-               print(ttp+"["+g+str(i)+ttp+"] Berhasil")
+               print(ttp+"["+g+str(i)+ttp+"] thanhcong")
           else:
-               print(ttp+"["+red+str(i)+ttp+"] Coba Lagi Besok")
+               print(ttp+"["+red+str(i)+ttp+"] thatbai")
 
 main()
